@@ -1,0 +1,122 @@
+[
+    {
+        "Category": "Structure (Dimension)",
+        "Indicator": "Country / Pays",
+        "Code": "COUNTRY",
+        "Source": "Commun aux 3 datasets",
+        "Usage": "Axe Géographique : Permet de comparer les clusters (Pionniers vs Bancarisés)."
+    },
+    {
+        "Category": "Structure (Dimension)",
+        "Indicator": "Year / Année",
+        "Code": "YEAR (Colonnes 2011-2024)",
+        "Source": "Commun aux 3 datasets",
+        "Usage": "Axe Temporel : Permet de voir l'évolution (Linéaire vs Exponentielle). *Nécessite une transformation 'Unpivot' dans Power BI.*"
+    },
+    {
+        "Category": "Structure (Clé Technique)",
+        "Indicator": "Series Code",
+        "Code": "SERIES_CODE",
+        "Source": "Clé de jointure",
+        "Usage": "Identifiant Unique : Sert à relier vos données FMI et Banque Mondiale dans le modèle."
+    },
+    {
+        "Category": "Structure (Méta-info)",
+        "Indicator": "Unit of Measure / Echelle",
+        "Code": "SCALE",
+        "Source": "FMI & WB",
+        "Usage": "Information : Indique si le chiffre est en 'Unités', 'Millions' ou 'Pourcentage'."
+    },
+
+    {
+        "Category": "Mobile Money (Cible)",
+        "Indicator": "Mobile money transactions (Annual Volume)",
+        "Code": "FA66.NUM.A",
+        "Source": "FMI (IMF Financial Access Survey)",
+        "Usage": "Hypothèse 1 & 3 : Volume d'usage total (à diviser par le PIB)."
+    },
+    {
+        "Category": "Mobile Money (Cible)",
+        "Indicator": "Active mobile money accounts",
+        "Code": "FA63.NUM.A",
+        "Source": "FMI (IMF Financial Access Survey)",
+        "Usage": "Hypothèse 2 : Taux d'adoption active (à diviser par la population)."
+    },
+    {
+        "Category": "Mobile Money (Offre)",
+        "Indicator": "Registered mobile money agent outlets",
+        "Code": "FA57.NUM.A",
+        "Source": "FMI (IMF Financial Access Survey)",
+        "Usage": "Hypothèse 1 : Densité du réseau mobile (à comparer aux agences bancaires)."
+    },
+    {
+        "Category": "Mobile Money (Maroc)",
+        "Indicator": "Registered mobile money accounts",
+        "Code": "MAR.FA67.NUM.A",
+        "Source": "FMI (Donnée Maroc Spécifique)",
+        "Usage": "Hypothèse 3 : Comparaison comptes ouverts vs comptes actifs."
+    },
+    {
+        "Category": "Infrastructure Bancaire",
+        "Indicator": "Number of commercial bank branches (Densité Geo)",
+        "Code": "FA26N.PTKM2_NUM.A",
+        "Source": "FMI (IMF Financial Access Survey)",
+        "Usage": "Hypothèse 1 : Agences par 1 000 km² (Déserts bancaires)."
+    },
+    {
+        "Category": "Infrastructure Bancaire",
+        "Indicator": "Number of commercial bank branches (Densité Demo)",
+        "Code": "FA26N.PHTADLT_NUM.A",
+        "Source": "FMI (IMF Financial Access Survey)",
+        "Usage": "Hypothèse 1 : Agences par 100 000 adultes (Saturation)."
+    },
+    {
+        "Category": "Infrastructure Bancaire (Maroc)",
+        "Indicator": "Automated teller machines (ATMs)",
+        "Code": "MAR.FA19.NUM.A",
+        "Source": "FMI (Donnée Maroc Spécifique)",
+        "Usage": "Hypothèse 3 : Maturité du réseau cash au Maroc."
+    },
+    {
+        "Category": "Economie (Contexte)",
+        "Indicator": "GDP (current US$)",
+        "Code": "NY.GDP.MKTP.CD",
+        "Source": "Banque Mondiale (WDI)",
+        "Usage": "Normalisation : Permet de calculer l'intensité économique."
+    },
+    {
+        "Category": "Economie (Contexte)",
+        "Indicator": "GDP growth (annual %)",
+        "Code": "NY.GDP.MKTP.KD.ZG",
+        "Source": "Banque Mondiale (WDI)",
+        "Usage": "Contexte : Dynamisme économique du pays."
+    },
+    {
+        "Category": "Démographie",
+        "Indicator": "Population, total",
+        "Code": "SP.POP.TOTL",
+        "Source": "Banque Mondiale (WDI)",
+        "Usage": "Normalisation : Pour ramener les chiffres 'par habitant'."
+    },
+    {
+        "Category": "Démographie",
+        "Indicator": "Rural population (% of total)",
+        "Code": "SP.RUR.TOTL.ZS",
+        "Source": "Banque Mondiale (WDI)",
+        "Usage": "Hypothèse 2 : Cœur de l'analyse sur l'inclusion financière."
+    },
+    {
+        "Category": "Démographie",
+        "Indicator": "Urban population (% of total)",
+        "Code": "SP.URB.TOTL.IN.ZS",
+        "Source": "Banque Mondiale (WDI)",
+        "Usage": "Contre-point à la population rurale."
+    },
+    {
+        "Category": "Technologie",
+        "Indicator": "Mobile cellular subscriptions (per 100 people)",
+        "Code": "IT.CEL.SETS.P2",
+        "Source": "Banque Mondiale (WDI)",
+        "Usage": "Pré-requis : Pénétration du téléphone mobile."
+    }
+]
